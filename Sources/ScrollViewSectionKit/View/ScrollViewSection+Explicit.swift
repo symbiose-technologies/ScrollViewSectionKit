@@ -135,6 +135,9 @@ public struct ScrollViewSectionExplicit<Content, Header, Footer, S: ScrollViewSe
                 .background(scrollViewSectionBackgroundColor)
             } else {
                 EmptyView()
+//                Color.red
+//                    .opacity(0.5)
+                
             }
         }
     }
@@ -151,7 +154,7 @@ public struct ScrollViewSectionExplicit<Content, Header, Footer, S: ScrollViewSe
                 )
             )
             /// Rows
-//            Group {
+            Group {
                 switch scrollViewSectionContainerType {
                 case .VStack:
                     VStack(alignment: .leading, spacing: 0.0) {
@@ -187,7 +190,7 @@ public struct ScrollViewSectionExplicit<Content, Header, Footer, S: ScrollViewSe
                     .clipShape(scrollViewSectionStyle.sectionClipShape)
 
                 }
-//            }
+            }
 //            .clipShape(scrollViewSectionStyle.sectionClipShape)
             /// Footer
             scrollViewSectionStyle.makeFooterBody(
